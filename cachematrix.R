@@ -1,12 +1,18 @@
 #this code completes R Programming//Programming Assignment 2
 
 #there are two functions
+
 #makeCacheMatrix creates an empty matrix (x) and creates the necessary functions for cacheSolve
+
 #cacheSolve computes the inverse of the matrix 
 #or retrives it from cache if it's already been calculated
 
 
 ##this script also contains a few test matricies
+
+
+
+#makeCacheMatrix creates an empty matrix (x) and creates the necessary functions for cacheSolve
 
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
@@ -23,7 +29,8 @@ makeCacheMatrix <- function(x = matrix()) {
        getinverse = getinverse)
 }
 
-
+#cacheSolve computes the inverse of the matrix 
+#or retrives it from cache if it's already been calculated
 
 cacheSolve <- function(x, ...) {
   m <- x$getinverse()
